@@ -4,23 +4,29 @@
    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
    <link href="css/styles.css" rel="stylesheet" type="text/css">
    <script src="js/jquery-3.4.1.js"></script>
-   <script src="js.scripts.js"></script>
+   <script src="js/scripts.js"></script>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Form Letter</title>
  </head>
  <body>
-   <form id="formOne">
-    <div class="container">
-      <div class="formGroup">
-        <label for="userName">Tell us your name!</label>
-        <input id="userName" class="formControl" type="text">
-      </div>
+  <div class="container">
+    <div>
+      <form id="formOne">   
+        <div class="formGroup">
+          <label for="userName">Tell us your name!</label>
+          <input id="userName" class="formControl" type="text">
+        </div>
+        
+        <button type="submit" class="btn">We wrote you a letter!</button>
       
-      <button type="submit" class="btn">We wrote you a letter!</button>
-      
-    </form> 
-   </div>
+      </form> 
+    </div>
+
+    <div id="letter">
+      <p> Hello, <span class="userName"></span>! <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum placeat eum eius accusantium delectus assumenda, perferendis est libero? Id aliquam consequuntur culpa aperiam fugit vero amet quia velit maiores facilis?</p>
+    </div>
+  </div>
    
  </body>
  </html>
